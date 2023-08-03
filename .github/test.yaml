@@ -1,0 +1,13 @@
+name: test
+on:
+  workflow_dispatch:
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - id: s1
+      if: true
+      run: echo "s1"
+    - id: s2
+      if: true
+      run: echo "s2"
